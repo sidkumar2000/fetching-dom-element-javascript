@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+
+</head>
+
+<body>
+    <h1>Amazon</h1>
+    <h1 class="blueel">Flipkart</h1>
+    <h1 class="blueel italicel">Uber</h1>
+    <h1 class="italicel">Ola</h1>
+    <h1 class="italicel" id="zomato">Zomato</h1>
+
+</body>
+
+<script>
+    let a=document.querySelector("h1")
+    let b=document.querySelector(".italicel")
+    let c=document.getElementById("zomato")
+    let bl=document.getElementsByClassName("blueel")
+    let el=document.getElementsByTagName("h1");
+    let it=document.getElementsByClassName("italicel");
+    el[0].style.color="red"
+    for(const x of bl) {
+        x.style.color="blue"
+    }
+    for(const x of it) {
+        x.style.backgroundColor="yellow"
+    }
+    c.style.fontSize="52px"
+</script>
+</html>
